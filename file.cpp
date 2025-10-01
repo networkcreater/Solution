@@ -4,16 +4,13 @@
 
 
 int main() {
-    setlocale(LC_ALL, "rus");
     std::ifstream inputFile("input.txt");
     std::string line;
 
-    int countNumbers; // Количество строк со словами в файле
+    int countNumbers;
 
-    for (int i = 0; i < 1; i ++ ) {
-        std::getline(inputFile, line);
-        countNumbers = std::stoi(line);
-    }
+    std::getline(inputFile, line);
+    countNumbers = std::stoi(line);
 
     std::string words[countNumbers];
 
